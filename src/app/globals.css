@@ -1,26 +1,150 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-glass: var(--glass);
+  --color-glass-border: var(--glass-border);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --font-body: var(--font-body);
+  --font-display: var(--font-display);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root,
+[data-theme="lime"] {
+  --bg: #182125;
+  --bg-2: #202B2F;
+  --surface: #263236;
+  --ink: #FFFFFF;
+  --muted: rgba(255, 255, 255, 0.76);
+  --glass: rgba(120, 155, 105, 0.34);
+  --glass-border: rgba(200, 240, 170, 0.22);
+  --accent: #8EF03A;
+  --accent-rgb: 142 240 58;
+  --accent-ink: #0E1A0B;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+[data-theme="orange"] {
+  --bg: #182125;
+  --bg-2: #202B2F;
+  --surface: #263236;
+  --ink: #FFFFFF;
+  --muted: rgba(255, 255, 255, 0.76);
+  --glass: rgba(165, 115, 80, 0.34);
+  --glass-border: rgba(255, 170, 120, 0.24);
+  --accent: #FF7A1A;
+  --accent-rgb: 255 122 26;
+  --accent-ink: #0E1A0B;
+}
+
+[data-theme="blue"] {
+  --bg: #182125;
+  --bg-2: #202B2F;
+  --surface: #263236;
+  --ink: #FFFFFF;
+  --muted: rgba(255, 255, 255, 0.76);
+  --glass: rgba(75, 130, 170, 0.34);
+  --glass-border: rgba(140, 210, 255, 0.24);
+  --accent: #2BB3FF;
+  --accent-rgb: 43 179 255;
+  --accent-ink: #0E1A0B;
+}
+
+/* Accessible focus-visible ring in brand accent color */
+:focus-visible,
+*:focus-visible {
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 3px !important;
+}
+
+/* 0.6s transition on color, background-color, border-color, box-shadow for cross-fade theme switching */
+[data-theme],
+[data-theme] *,
+.glass,
+.glow,
+button,
+a {
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Utility classes */
+@utility glass {
+  background-color: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  border-radius: 22px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+@utility glow {
+  box-shadow: 0 0 40px rgb(var(--accent-rgb) / 0.6);
+}
+
+@utility ghost-text {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  user-select: none;
+}
+
+@utility bg-dark {
+  background-color: var(--bg);
+  background-image: radial-gradient(circle at center, var(--bg) 0%, #101618 100%);
+}
+
+@utility scroll-reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Standard classes fallback */
+.glass {
+  background-color: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  border-radius: 22px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.glow {
+  box-shadow: 0 0 40px rgb(var(--accent-rgb) / 0.6);
+}
+
+.ghost-text {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  user-select: none;
+}
+
+.bg-dark {
+  background-color: var(--bg);
+  background-image: radial-gradient(circle at center, var(--bg) 0%, #101618 100%);
+}
+
+/* Global Prefers-Reduced-Motion Rules */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  .marquee-left,
+  .marquee-right {
+    animation: none !important;
+  }
 }

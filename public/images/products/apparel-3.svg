@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none" width="600" height="420">
+  <defs>
+    <radialGradient id="appGlow-SPLIT SHORTS" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="bodyGrad-SPLIT SHORTS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="300" cy="360" rx="200" ry="35" fill="url(#appGlow-SPLIT SHORTS)" />
+  <ellipse cx="300" cy="365" rx="160" ry="18" fill="#000000" opacity="0.7" filter="blur(8px)" />
+
+  <text x="300" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="70" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" letter-spacing="6" text-anchor="middle" text-transform="uppercase">SPLIT SHORTS</text>
+
+  <!-- Apparel Silhouette: Hoodie or Tee or Shorts -->
+  <g transform="translate(140, 50)">
+    
+      <!-- Split Shorts -->
+      <path d="M 80 80 H 240 L 255 240 C 220 250, 180 230, 160 170 C 140 230, 100 250, 65 240 Z" fill="url(#bodyGrad-SPLIT SHORTS)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
+      <!-- Waistband -->
+      <rect x="75" y="70" width="170" height="24" rx="6" fill="#0F172A" stroke="#00E5FF" stroke-width="1.5" />
+      <!-- Drawstrings -->
+      <line x1="155" y1="94" x2="150" y2="130" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <line x1="165" y1="94" x2="170" y2="130" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" />
+      <!-- Split Leg Accent -->
+      <path d="M 70 200 L 65 240" stroke="#00E5FF" stroke-width="3" />
+      <path d="M 250 200 L 255 240" stroke="#00E5FF" stroke-width="3" />
+      <!-- STRIDE Chevron on Hem -->
+      <path d="M 90 220 L 98 206 H 104 L 96 220 Z" fill="#00E5FF" />
+      <path d="M 100 220 L 108 206 H 114 L 106 220 Z" fill="#FFFFFF" />
+    
+  </g>
+
+  <!-- Spec Tag -->
+  <g transform="translate(480, 50)">
+    <rect width="80" height="24" rx="12" fill="#0F172A" stroke="rgba(255,255,255,0.15)" />
+    <circle cx="14" cy="12" r="4" fill="#00E5FF" />
+    <text x="24" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10" fill="#FFFFFF" letter-spacing="1">STRIDE</text>
+  </g>
+</svg>

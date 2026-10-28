@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none" width="160" height="40">
+  <defs>
+    <linearGradient id="strideNeonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF" />
+      <stop offset="100%" stop-color="#2BB3FF" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Kinetic Chevron 1 -->
+  <path d="M6 28L17 8H23L12 28H6Z" fill="url(#strideNeonGrad)" filter="url(#neonGlow)" />
+  
+  <!-- Kinetic Chevron 2 -->
+  <path d="M19 28L30 8H36L25 28H19Z" fill="#FFFFFF" />
+
+  <!-- Typography: STRIDE -->
+  <text x="44" y="26" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="20" letter-spacing="3" fill="#FFFFFF">STRIDE</text>
+  
+  <!-- Small dot in neon accent -->
+  <circle cx="146" cy="24" r="2.5" fill="url(#strideNeonGrad)" />
+</svg>

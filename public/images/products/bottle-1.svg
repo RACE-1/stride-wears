@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none" width="600" height="420">
+  <defs>
+    <radialGradient id="gearGlow-HYDROLOCK" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="gearGrad-HYDROLOCK" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="300" cy="355" rx="190" ry="32" fill="url(#gearGlow-HYDROLOCK)" />
+  <ellipse cx="300" cy="360" rx="150" ry="16" fill="#000000" opacity="0.75" filter="blur(8px)" />
+
+  <text x="300" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="64" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" letter-spacing="6" text-anchor="middle" text-transform="uppercase">HYDROLOCK</text>
+
+  <g transform="translate(180, 60)">
+    
+      <!-- HydroLock Insulated Bottle -->
+      <rect x="80" y="60" width="80" height="230" rx="20" fill="url(#gearGrad-HYDROLOCK)" stroke="#00E5FF" stroke-width="2" />
+      <!-- Chug Sports Lid -->
+      <rect x="95" y="30" width="50" height="30" rx="8" fill="#0F172A" stroke="#FFFFFF" stroke-width="1.5" />
+      <path d="M 135 40 C 160 30, 165 60, 140 60" stroke="#00E5FF" stroke-width="5" fill="none" stroke-linecap="round" />
+      <!-- Rubber Grip Ring -->
+      <rect x="80" y="110" width="80" height="40" fill="#0B131E" stroke="#00E5FF" stroke-width="1.5" />
+      <!-- Measure Scale Markings -->
+      <line x1="85" y1="180" x2="105" y2="180" stroke="#00E5FF" stroke-width="2" />
+      <line x1="85" y1="200" x2="115" y2="200" stroke="#00E5FF" stroke-width="2" />
+      <line x1="85" y1="220" x2="105" y2="220" stroke="#00E5FF" stroke-width="2" />
+      <!-- STRIDE Typography Vertical -->
+      <text x="135" y="210" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" letter-spacing="4" transform="rotate(-90 135 210)">STRIDE</text>
+    
+  </g>
+
+  <g transform="translate(480, 50)">
+    <rect width="80" height="24" rx="12" fill="#0F172A" stroke="rgba(255,255,255,0.15)" />
+    <circle cx="14" cy="12" r="4" fill="#00E5FF" />
+    <text x="24" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10" fill="#FFFFFF" letter-spacing="1">STRIDE</text>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" fill="none" width="600" height="420">
+  <defs>
+    <radialGradient id="gearGlow-RUNNING CAP" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="gearGrad-RUNNING CAP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="300" cy="355" rx="190" ry="32" fill="url(#gearGlow-RUNNING CAP)" />
+  <ellipse cx="300" cy="360" rx="150" ry="16" fill="#000000" opacity="0.75" filter="blur(8px)" />
+
+  <text x="300" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="64" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" letter-spacing="6" text-anchor="middle" text-transform="uppercase">RUNNING CAP</text>
+
+  <g transform="translate(180, 60)">
+    
+      <!-- AeroVent Running Visor Cap -->
+      <path d="M 30 180 C 40 100, 180 90, 210 180 Z" fill="url(#gearGrad-RUNNING CAP)" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+      <!-- Aerodynamic Brim -->
+      <path d="M 30 180 C 60 170, 150 170, 210 180 C 235 185, 270 200, 260 210 C 210 225, 90 220, 30 180 Z" fill="#0F172A" stroke="#00E5FF" stroke-width="2" />
+      <!-- Laser Perforated Breathability -->
+      <circle cx="100" cy="140" r="3" fill="#00E5FF" />
+      <circle cx="115" cy="140" r="3" fill="#00E5FF" />
+      <circle cx="130" cy="140" r="3" fill="#00E5FF" />
+      <circle cx="107" cy="155" r="3" fill="#00E5FF" />
+      <circle cx="122" cy="155" r="3" fill="#00E5FF" />
+      <!-- Front STRIDE Chevron -->
+      <path d="M 115 130 L 125 115 H 132 L 122 130 Z" fill="#00E5FF" />
+      <path d="M 127 130 L 137 115 H 144 L 134 130 Z" fill="#FFFFFF" />
+    
+  </g>
+
+  <g transform="translate(480, 50)">
+    <rect width="80" height="24" rx="12" fill="#0F172A" stroke="rgba(255,255,255,0.15)" />
+    <circle cx="14" cy="12" r="4" fill="#00E5FF" />
+    <text x="24" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10" fill="#FFFFFF" letter-spacing="1">STRIDE</text>
+  </g>
+</svg>
