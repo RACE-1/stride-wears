@@ -726,15 +726,15 @@
   },
   {
     "id": "bag-1",
-    "slug": "stride-stormproof-35l-commuter-duffel",
-    "name": "STRIDE StormProof 35L Duffel Bag",
+    "slug": "stride-stormproof-35l-backpack",
+    "name": "STRIDE StormProof 35L Backpack",
     "category": "Bags",
     "gender": "Unisex",
     "price": 750,
     "originalPrice": 900,
-    "image": "/images/products/bag-1.svg",
+    "image": "/images/products/bag-stormproof-backpack.webp",
     "gallery": [
-      "/images/products/bag-1.svg"
+      "/images/products/bag-stormproof-backpack.webp"
     ],
     "sizes": [
       "35L One Size"
@@ -751,11 +751,11 @@
     ],
     "rating": 4.9,
     "reviewsCount": 65,
-    "description": "Weather-resistant 900D coated nylon duffel featuring a ventilated exterior shoe garage and padded 16\" laptop sleeve for seamless gym-to-work transitions.",
+    "description": "Weather-resistant 900D coated ripstop nylon backpack featuring a ventilated exterior shoe garage and padded 16\" laptop sleeve for seamless gym-to-work transitions.",
     "features": [
       "Waterproof coated tarpaulin base panel",
       "Isolated ventilated sneaker compartment",
-      "Removable ergonomic shoulder harness",
+      "Ergonomic breathable air-mesh shoulder harness",
       "TSA-ready passport and key clip pocket"
     ],
     "isFeatured": false,
@@ -764,14 +764,14 @@
   },
   {
     "id": "cap-1",
-    "slug": "stride-aerovent-running-visor-cap",
-    "name": "STRIDE AeroVent Running Visor Cap",
+    "slug": "stride-aerovent-running-cap",
+    "name": "STRIDE AeroVent Running Cap",
     "category": "Caps",
     "gender": "Unisex",
     "price": 280,
-    "image": "/images/products/cap-1.svg",
+    "image": "/images/products/cap-aerovent-running.webp",
     "gallery": [
-      "/images/products/cap-1.svg"
+      "/images/products/cap-aerovent-running.webp"
     ],
     "sizes": [
       "One Size (Adjustable)"
@@ -797,22 +797,22 @@
       "UPF 50+ ultraviolet sun protection",
       "Laser-cut breathable side mesh panels",
       "Moisture-wicking internal sweatband",
-      "Crushable packable soft brim"
+      "Crushable packable soft curved brim"
     ],
     "isFeatured": false,
     "inStock": true
   },
   {
     "id": "bottle-1",
-    "slug": "stride-hydrolock-950ml-steel-bottle",
-    "name": "STRIDE HydroLock 950ml Steel Bottle",
+    "slug": "stride-hydrolock-950ml-water-bottle",
+    "name": "STRIDE HydroLock 950ml Water Bottle",
     "category": "Bottles",
     "gender": "Unisex",
     "price": 340,
     "originalPrice": 400,
-    "image": "/images/products/bottle-1.svg",
+    "image": "/images/products/bottle-hydrolock-950ml.webp",
     "gallery": [
-      "/images/products/bottle-1.svg"
+      "/images/products/bottle-hydrolock-950ml.webp"
     ],
     "sizes": [
       "950ml (32 oz)"
@@ -846,15 +846,15 @@
   },
   {
     "id": "bag-2",
-    "slug": "stride-crossbody-modular-utility-pack",
-    "name": "STRIDE CrossBody Modular Utility Pack",
+    "slug": "stride-crossbody-bag",
+    "name": "STRIDE Crossbody Bag",
     "category": "Bags",
     "gender": "Unisex",
     "price": 460,
     "originalPrice": 550,
-    "image": "/images/products/bag-2.svg",
+    "image": "/images/products/bag-crossbody-sling.webp",
     "gallery": [
-      "/images/products/bag-2.svg"
+      "/images/products/bag-crossbody-sling.webp"
     ],
     "sizes": [
       "4.5L One Size"
@@ -871,11 +871,11 @@
     ],
     "rating": 4.7,
     "reviewsCount": 43,
-    "description": "Hands-free agility for workouts and urban commutes. Compact 4.5L sling with dual zippered compartments, internal mesh organizers, and quick-release tactical buckle.",
+    "description": "Hands-free agility for workouts and urban commutes. Compact crossbody sling with dual zippered compartments, internal mesh organizers, and quick-release tactical buckle.",
     "features": [
-      "Weather-resistant Cordura construction",
+      "Weather-resistant Cordura ballistic nylon construction",
       "Heavy-duty magnetic FIDLOCK quick-release clasp",
-      "Fleece-lined sunglasses & phone pocket",
+      "Fleece-lined phone and valuables pocket",
       "Adjustable reversible ambidextrous strap"
     ],
     "isFeatured": false,
