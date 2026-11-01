@@ -403,62 +403,16 @@
     "inStock": true
   },
   {
-    "id": "apparel-1",
-    "slug": "stride-aeroflow-tech-fleece-hoodie",
-    "name": "STRIDE Aeroflow Tech Fleece Hoodie",
+    "id": "apparel-tee-dress",
+    "slug": "stride-minimalist-athletic-tee-dress",
+    "name": "STRIDE Minimalist Athletic Tee Dress",
     "category": "Apparel",
-    "gender": "Men",
-    "price": 850,
-    "originalPrice": 1050,
-    "image": "/images/products/apparel-1.svg",
+    "gender": "Women",
+    "price": 680,
+    "originalPrice": 820,
+    "image": "/images/products/apparel-tee-dress.webp",
     "gallery": [
-      "/images/products/apparel-1.svg",
-      "/images/products/apparel-1-alt1.svg"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [
-      {
-        "name": "Obsidian Black",
-        "hex": "#11191C"
-      },
-      {
-        "name": "Heather Charcoal",
-        "hex": "#263236"
-      },
-      {
-        "name": "Electric Cyan Trim",
-        "hex": "#00E5FF"
-      }
-    ],
-    "rating": 4.9,
-    "reviewsCount": 87,
-    "description": "Engineered with premium double-knit thermal fleece that traps warmth without bulk. Features bonded zip pockets and aerodynamic 4-panel scuba hood.",
-    "features": [
-      "Thermal micro-fleece insulation",
-      "Bonded waterproof zipper chest pocket",
-      "Ergonomic raglan sleeves for athletic mobility",
-      "Reflective STRIDE spine tape"
-    ],
-    "isFeatured": false,
-    "tag": "BEST SELLER",
-    "inStock": true
-  },
-  {
-    "id": "apparel-2",
-    "slug": "stride-seamless-kinetic-performance-tee",
-    "name": "STRIDE Seamless Kinetic Performance Tee",
-    "category": "Apparel",
-    "gender": "Unisex",
-    "price": 420,
-    "image": "/images/products/apparel-2.svg",
-    "gallery": [
-      "/images/products/apparel-2.svg"
+      "/images/products/apparel-tee-dress.webp"
     ],
     "sizes": [
       "XS",
@@ -469,28 +423,305 @@
     ],
     "colors": [
       {
-        "name": "Cyber Blue",
-        "hex": "#00E5FF"
+        "name": "Stealth Matte Black",
+        "hex": "#11191C",
+        "image": "/images/products/apparel-tee-dress.webp"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 114,
+    "description": "Engineered from heavyweight 240gsm combed organic cotton with a modern relaxed drape, dropped shoulder seams, and reinforced micro-ribbed crew collar for everyday athletic fashion.",
+    "features": [
+      "Heavyweight 240gsm combed organic cotton",
+      "Relaxed modern streetwear athletic drape",
+      "Anti-twist pre-shrunk construction",
+      "Double-needle clean hem stitching"
+    ],
+    "isFeatured": false,
+    "tag": "NEW",
+    "inStock": true
+  },
+  {
+    "id": "apparel-ribbed-tank-dress",
+    "slug": "stride-sculpted-aero-ribbed-tank-dress",
+    "name": "STRIDE Sculpted Aero Ribbed Tank Dress",
+    "category": "Apparel",
+    "gender": "Women",
+    "price": 740,
+    "originalPrice": 900,
+    "image": "/images/products/apparel-ribbed-tank-dress.webp",
+    "gallery": [
+      "/images/products/apparel-ribbed-tank-dress.webp"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Blush Peach",
+        "hex": "#E8A598",
+        "image": "/images/products/apparel-ribbed-tank-dress.webp"
       },
       {
-        "name": "Volt Lime",
-        "hex": "#8EF03A"
-      },
-      {
-        "name": "Deep Space",
-        "hex": "#182125"
+        "name": "Obsidian Black",
+        "hex": "#11191C"
       }
     ],
     "rating": 4.8,
-    "reviewsCount": 110,
-    "description": "Zero chafe, zero distraction. Knit with open mesh body-mapping ventilation zones where heat builds up most during high-intensity workouts.",
+    "reviewsCount": 92,
+    "description": "Precision-sculpted in micro-rib knit with 4-way dynamic stretch and athletic racerback geometry for form-flattering performance and elevated warm-weather street versatility.",
     "features": [
-      "Seamless anti-chafing body construction",
-      "Quick-drying moisture management fabric",
-      "Silicone grip hem to prevent ride-up",
-      "Ultra-light 105g weight"
+      "Ultra-soft micro-rib modal stretch knit",
+      "Sculpting ergonomic body-contour fit",
+      "Racerback shoulder cut for unhindered mobility",
+      "Breathable shape-retaining recovery yarn"
     ],
     "isFeatured": false,
+    "tag": "HOT",
+    "inStock": true
+  },
+  {
+    "id": "apparel-hoodie-dress",
+    "slug": "stride-tech-fleece-oversized-hooded-dress",
+    "name": "STRIDE Tech Fleece Oversized Hooded Dress",
+    "category": "Apparel",
+    "gender": "Women",
+    "price": 980,
+    "originalPrice": 1200,
+    "image": "/images/products/apparel-hoodie-dress.webp",
+    "gallery": [
+      "/images/products/apparel-hoodie-dress.webp"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Dusty Rose Pink",
+        "hex": "#C27D88",
+        "image": "/images/products/apparel-hoodie-dress.webp"
+      },
+      {
+        "name": "Carbon Black",
+        "hex": "#11191C"
+      }
+    ],
+    "rating": 5,
+    "reviewsCount": 138,
+    "description": "Double-sided smooth brushed fleece insulation with a structured scuba hood, kangaroo pouch pocket, and modern elongated streetwear silhouette tailored for cool evenings.",
+    "features": [
+      "Premium double-knit Tech Fleece insulation",
+      "Structured ergonomic scuba hood with high neck",
+      "Kangaroo hand-warming front pouch pocket",
+      "Drop-shoulder relaxed streetwear drape"
+    ],
+    "isFeatured": false,
+    "tag": "BEST SELLER",
+    "inStock": true
+  },
+  {
+    "id": "pants-pro-sculpt-tights",
+    "slug": "stride-pro-sculpt-compression-training-tights",
+    "name": "STRIDE Pro Sculpt Compression Training Tights",
+    "category": "Apparel",
+    "gender": "Women",
+    "price": 790,
+    "originalPrice": 950,
+    "image": "/images/products/pants-pro-sculpt-tights.webp",
+    "gallery": [
+      "/images/products/pants-pro-sculpt-tights.webp"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Matte Midnight Black",
+        "hex": "#11191C",
+        "image": "/images/products/pants-pro-sculpt-tights.webp"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 164,
+    "description": "High-waisted compression performance leggings with bonded tummy-control waistband, targeted laser ventilation zones, and zero-sheer squat-proof fabric for maximum training support.",
+    "features": [
+      "High-compression 4-way stretch interlock knit",
+      "Zero-sheer squat-tested opaque fabric",
+      "Wide contoured bonded high-rise waistband",
+      "Ergonomic flatlock seams preventing chafing"
+    ],
+    "isFeatured": false,
+    "tag": "NEW",
+    "inStock": true
+  },
+  {
+    "id": "pants-french-terry-joggers",
+    "slug": "stride-heavyweight-french-terry-relaxed-joggers",
+    "name": "STRIDE Heavyweight French Terry Relaxed Joggers",
+    "category": "Apparel",
+    "gender": "Unisex",
+    "price": 820,
+    "originalPrice": 980,
+    "image": "/images/products/pants-french-terry-joggers.webp",
+    "gallery": [
+      "/images/products/pants-french-terry-joggers.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "colors": [
+      {
+        "name": "Slate Charcoal",
+        "hex": "#2C3437",
+        "image": "/images/products/pants-french-terry-joggers.webp"
+      },
+      {
+        "name": "Matte Black",
+        "hex": "#11191C"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 121,
+    "description": "Crafted from 400gsm heavyweight looped French terry with relaxed athletic collegiate drape, deep slash pockets, and dense ribbed tapered ankle cuffs for versatile off-duty style.",
+    "features": [
+      "400gsm heavyweight looped French terry",
+      "Ribbed elastic waistband with metal-tipped drawstrings",
+      "Deep reinforced side slant pockets",
+      "Tapered dense ribbed ankle cuffs"
+    ],
+    "isFeatured": false,
+    "tag": "HOT",
+    "inStock": true
+  },
+  {
+    "id": "pants-aerospeed-biker-shorts",
+    "slug": "stride-aerospeed-7-high-rise-biker-shorts",
+    "name": "STRIDE AeroSpeed 7\" High-Rise Biker Shorts",
+    "category": "Apparel",
+    "gender": "Women",
+    "price": 560,
+    "originalPrice": 680,
+    "image": "/images/products/pants-aerospeed-biker-shorts.webp",
+    "gallery": [
+      "/images/products/pants-aerospeed-biker-shorts.webp"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Stealth Black",
+        "hex": "#11191C",
+        "image": "/images/products/pants-aerospeed-biker-shorts.webp"
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 97,
+    "description": "High-rise performance athletic training shorts with crossover compression waistband, dual drop-in phone pockets, and silicone grip hems designed for high-motion cardio.",
+    "features": [
+      "7-inch high-mobility training inseam",
+      "Crossover contour compression waistband",
+      "Dual side drop-in smartphone pockets",
+      "Silicone hem grips prevent ride-up"
+    ],
+    "isFeatured": false,
+    "tag": "BEST SELLER",
+    "inStock": true
+  },
+  {
+    "id": "sock-everyday-cushioned-crew",
+    "slug": "stride-everyday-cushioned-crew-socks-3pack",
+    "name": "STRIDE Everyday Cushioned Crew Socks (3-Pack)",
+    "category": "Socks",
+    "gender": "Unisex",
+    "price": 240,
+    "image": "/images/products/sock-everyday-cushioned-crew.webp",
+    "gallery": [
+      "/images/products/sock-everyday-cushioned-crew.webp"
+    ],
+    "sizes": [
+      "M (US 6-9)",
+      "L (US 9.5-12)",
+      "XL (US 12+)"
+    ],
+    "colors": [
+      {
+        "name": "Optic White (3-Pack)",
+        "hex": "#FFFFFF",
+        "image": "/images/products/sock-everyday-cushioned-crew.webp"
+      },
+      {
+        "name": "Triple Black",
+        "hex": "#11191C"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 240,
+    "description": "Optic white athletic crew socks with zoned high-density terry cushioning under the heel and forefoot, dynamic 360-degree arch compression band, and breathable mesh upper.",
+    "features": [
+      "High-density zoned footbed cushioning",
+      "360-degree midfoot compression arch support",
+      "Silver-ion anti-odor treated yarn",
+      "Reinforced heel and seamless toe closure"
+    ],
+    "isFeatured": false,
+    "tag": "BEST SELLER",
+    "inStock": true
+  },
+  {
+    "id": "sock-special-edition-tiedye",
+    "slug": "stride-special-edition-tie-dye-cushioned-socks",
+    "name": "STRIDE Special Edition Tie-Dye Cushioned Socks",
+    "category": "Socks",
+    "gender": "Unisex",
+    "price": 290,
+    "image": "/images/products/sock-special-edition-tiedye.webp",
+    "gallery": [
+      "/images/products/sock-special-edition-tiedye.webp"
+    ],
+    "sizes": [
+      "M (US 6-9)",
+      "L (US 9.5-12)",
+      "XL (US 12+)"
+    ],
+    "colors": [
+      {
+        "name": "Multi-Color Tie-Dye",
+        "hex": "#00E5FF",
+        "image": "/images/products/sock-special-edition-tiedye.webp"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 156,
+    "description": "Hand-crafted aesthetic pastel tie-dye with electric cyan, sunset orange, and volt lime swirls. Built on our ultra-cushioned athletic crew chassis for unmatched comfort and style.",
+    "features": [
+      "Vibrant fade-resistant pastel tie-dye knit",
+      "Zoned footbed terry impact absorption",
+      "Dynamic arch compression lockdown band",
+      "Ribbed stay-up ankle cuff"
+    ],
+    "isFeatured": false,
+    "tag": "NEW",
     "inStock": true
   },
   {
@@ -529,44 +760,6 @@
     ],
     "isFeatured": false,
     "tag": "NEW",
-    "inStock": true
-  },
-  {
-    "id": "sock-1",
-    "slug": "stride-ultracushion-crew-socks-3pack",
-    "name": "STRIDE UltraCushion Crew Socks (3-Pack)",
-    "category": "Socks",
-    "gender": "Unisex",
-    "price": 220,
-    "image": "/images/products/sock-1.svg",
-    "gallery": [
-      "/images/products/sock-1.svg"
-    ],
-    "sizes": [
-      "M (US 6-9)",
-      "L (US 9.5-12)",
-      "XL (US 12+)"
-    ],
-    "colors": [
-      {
-        "name": "Multi-Pack (Black / White / Neon)",
-        "hex": "#00E5FF"
-      },
-      {
-        "name": "Triple Obsidian",
-        "hex": "#11191C"
-      }
-    ],
-    "rating": 4.8,
-    "reviewsCount": 198,
-    "description": "Targeted arch compression and blister-prevention padding under the forefoot and Achilles tendon. Features silver-ion anti-odor yarn.",
-    "features": [
-      "High-density terry heel & toe cushioning",
-      "Dynamic 360-degree midfoot compression band",
-      "Seamless linked toe seam eliminates friction",
-      "Anti-odor antimicrobial treatment"
-    ],
-    "isFeatured": false,
     "inStock": true
   },
   {
@@ -649,45 +842,6 @@
     ],
     "isFeatured": false,
     "tag": "HOT",
-    "inStock": true
-  },
-  {
-    "id": "apparel-3",
-    "slug": "stride-speedvent-5-aero-split-shorts",
-    "name": "STRIDE SpeedVent 5\" Aero Split Shorts",
-    "category": "Apparel",
-    "gender": "Men",
-    "price": 490,
-    "image": "/images/products/apparel-3.svg",
-    "gallery": [
-      "/images/products/apparel-3.svg"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "colors": [
-      {
-        "name": "Obsidian",
-        "hex": "#11191C"
-      },
-      {
-        "name": "Electric Cyan",
-        "hex": "#00E5FF"
-      }
-    ],
-    "rating": 4.8,
-    "reviewsCount": 89,
-    "description": "Engineered for maximum leg turnover with deep side splits and lightweight breathable brief liner. Includes bounce-free center-back zip phone pocket.",
-    "features": [
-      "4-way stretch woven ripstop fabric",
-      "Bounce-free sweatproof center zippered pocket",
-      "Supportive moisture-wicking boxer-brief liner",
-      "Side nutrition gel drop-in slots"
-    ],
-    "isFeatured": false,
     "inStock": true
   },
   {
