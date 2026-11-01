@@ -3,10 +3,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, Zap, Sparkles } from 'lucide-react';
-import { featuredShoes } from '@/data/products';
+import { useProducts } from '@/context/ProductContext';
 import ProductCard from '@/components/products/ProductCard';
 
 export default function FeaturedShoes() {
+  const { featuredShoes } = useProducts();
   return (
     <section id="featured-shoes" className="relative py-20 lg:py-28 bg-[#0D1417] overflow-hidden">
       {/* Background ambient lighting */}
@@ -36,7 +37,7 @@ export default function FeaturedShoes() {
 
           <div className="flex items-center gap-3">
             <span className="text-sm font-semibold text-white/50 bg-white/5 border border-white/10 px-4 py-2 rounded-xl">
-              8 Models Available
+              {featuredShoes.length} Models Available
             </span>
             <a
               href="#catalog"

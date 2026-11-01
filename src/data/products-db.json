@@ -1,0 +1,818 @@
+[
+  {
+    "id": "prod-1793504219971",
+    "slug": "stride-pro-high-impact-training-top",
+    "name": "STRIDE Pro High-Impact Sports Bra & Training Top",
+    "category": "Apparel",
+    "gender": "Women",
+    "price": 720,
+    "originalPrice": 900,
+    "image": "/uploads/products/product-stride-women-training-top.webp",
+    "gallery": [
+      "/uploads/products/product-stride-women-training-top.webp"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Core Black",
+        "hex": "#11191C"
+      },
+      {
+        "name": "Pure White",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "Electric Cyan",
+        "hex": "#00E5FF"
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 34,
+    "description": "Designed for high-impact workouts, running, and cardio. Features moisture-wicking compression fabric with targeted ventilation zones and ergonomic racerback support.",
+    "features": [
+      "High-impact compression support with zero-bounce stabilization",
+      "Targeted laser-perforated cooling zones along chest and back",
+      "Dri-FIT rapid moisture evaporation knit",
+      "Smooth bonded band preventing digging and friction"
+    ],
+    "isFeatured": false,
+    "tag": "BEST SELLER",
+    "inStock": true
+  },
+  {
+    "id": "prod-1793504201549",
+    "slug": "stride-pro-thermal-sportswear-top",
+    "name": "STRIDE Pro Thermal Sportswear Top",
+    "category": "Apparel",
+    "gender": "Men",
+    "price": 890,
+    "originalPrice": 1100,
+    "image": "/uploads/products/product-stride-pro-thermal-top.webp",
+    "gallery": [
+      "/uploads/products/product-stride-pro-thermal-top.webp"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "colors": [
+      {
+        "name": "Oatmeal Heather / Black",
+        "hex": "#E2DBD2"
+      },
+      {
+        "name": "Obsidian Stealth",
+        "hex": "#11191C"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 18,
+    "description": "Constructed from thermal micro-mesh knit with dual-layer temperature regulation, engineered for cold-morning road miles and high-intensity gym sessions.",
+    "features": [
+      "Dual-layer thermal micro-mesh knit",
+      "Ergonomic athletic raglan sleeve construction",
+      "Anti-odor antimicrobial finish",
+      "High-flex flatlock anti-chafing seams"
+    ],
+    "isFeatured": false,
+    "tag": "NEW",
+    "inStock": true
+  },
+  {
+    "id": "shoe-1",
+    "slug": "stride-kinetic-zoom-x",
+    "name": "STRIDE Kinetic Pegasus Volt",
+    "category": "Shoes",
+    "gender": "Men",
+    "price": 1850,
+    "originalPrice": 2200,
+    "image": "/images/products/shoe-1.png",
+    "gallery": [
+      "/images/products/shoe-1.png",
+      "/images/products/shoe-pair.png",
+      "/images/products/shoe-profile.png",
+      "/images/products/shoe-1-alt1.png"
+    ],
+    "sizes": [
+      "US 7.5",
+      "US 8",
+      "US 8.5",
+      "US 9",
+      "US 9.5",
+      "US 10",
+      "US 10.5",
+      "US 11",
+      "US 12"
+    ],
+    "colors": [
+      {
+        "name": "Volt Lime / Royal Blue",
+        "hex": "#8EF03A",
+        "image": "/images/products/shoe-1.png"
+      },
+      {
+        "name": "Cyan Blue / Stealth",
+        "hex": "#00E5FF",
+        "image": "/images/products/shoe-1-alt1.png"
+      },
+      {
+        "name": "Hyper Orange / Slate",
+        "hex": "#FF7A1A",
+        "image": "/images/products/shoe-1-alt2.png"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 142,
+    "description": "Engineered for maximum velocity, the STRIDE Kinetic Pegasus combines full-length dual-density ZoomX+ foam with dynamic flywire support cables and an engineered gradient mesh upper for an explosive 85% kinetic energy return on every foot strike.",
+    "features": [
+      "Dual-density kinetic foam core with electric volt heel wedge",
+      "High-tensile dynamic lateral flywire cables for locked-in fit",
+      "Ultra-breathable gradient engineered mesh (Volt to Deep Royal)",
+      "High-abrasion carbon rubber waffle traction lugs"
+    ],
+    "isFeatured": true,
+    "tag": "BEST SELLER",
+    "inStock": true
+  },
+  {
+    "id": "shoe-2",
+    "slug": "stride-aerospeed-elite-carbon",
+    "name": "STRIDE AeroSpeed Pegasus Cobalt",
+    "category": "Shoes",
+    "gender": "Unisex",
+    "price": 2400,
+    "originalPrice": 2750,
+    "image": "/images/products/shoe-2.png",
+    "gallery": [
+      "/images/products/shoe-2.png",
+      "/images/products/shoe-pair.png",
+      "/images/products/shoe-1.png"
+    ],
+    "sizes": [
+      "US 7",
+      "US 8",
+      "US 8.5",
+      "US 9",
+      "US 9.5",
+      "US 10",
+      "US 10.5",
+      "US 11",
+      "US 12",
+      "US 13"
+    ],
+    "colors": [
+      {
+        "name": "Electric Cyan",
+        "hex": "#00E5FF",
+        "image": "/images/products/shoe-2.png"
+      },
+      {
+        "name": "Solar Lime",
+        "hex": "#8EF03A",
+        "image": "/images/products/shoe-1.png"
+      },
+      {
+        "name": "Triple Black",
+        "hex": "#11191C",
+        "image": "/images/products/shoe-5.png"
+      }
+    ],
+    "rating": 5,
+    "reviewsCount": 98,
+    "description": "The pinnacle marathon racing instrument. Stripped down to sheer performance essentials, the AeroSpeed Cobalt features a featherweight chassis and precision-sculpted dual-density midsole tuned specifically for sub-2:10 pace turnover.",
+    "features": [
+      "Anatomically curved carbon fiber propulsion plate",
+      "Aeroweave gradient upper with hydrophobic zero-water retention",
+      "Beveled heel rocker for smooth transition gait",
+      "Wet-weather wet-grip waffle compound outsole"
+    ],
+    "isFeatured": true,
+    "tag": "NEW",
+    "inStock": true
+  },
+  {
+    "id": "shoe-3",
+    "slug": "stride-vapordash-3-pro",
+    "name": "STRIDE VaporDash Solar Orange",
+    "category": "Shoes",
+    "gender": "Women",
+    "price": 1650,
+    "originalPrice": 1950,
+    "image": "/images/products/shoe-3.png",
+    "gallery": [
+      "/images/products/shoe-3.png",
+      "/images/products/shoe-profile.png",
+      "/images/products/shoe-1.png"
+    ],
+    "sizes": [
+      "US 5.5",
+      "US 6",
+      "US 6.5",
+      "US 7",
+      "US 7.5",
+      "US 8",
+      "US 8.5",
+      "US 9"
+    ],
+    "colors": [
+      {
+        "name": "Hyper Orange",
+        "hex": "#FF7A1A",
+        "image": "/images/products/shoe-3.png"
+      },
+      {
+        "name": "Deep Cyan",
+        "hex": "#00E5FF",
+        "image": "/images/products/shoe-2.png"
+      },
+      {
+        "name": "Volt Lime",
+        "hex": "#8EF03A",
+        "image": "/images/products/shoe-1.png"
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 215,
+    "description": "Designed for daily tempo runs and track intervals. The VaporDash Solar Orange gives responsive spring-loaded rebound with high-visibility dynamic flywire cables providing lateral stability around sharp turns.",
+    "features": [
+      "Grounded responsive forefoot cushioning",
+      "Dynamic midfoot internal lock-down cage",
+      "Breathable engineered cooling mesh",
+      "Reflective 360-degree night visibility accents"
+    ],
+    "isFeatured": true,
+    "tag": "-15%",
+    "inStock": true
+  },
+  {
+    "id": "shoe-4",
+    "slug": "stride-phantom-glide-stealth",
+    "name": "STRIDE Pegasus Dual Road Pair",
+    "category": "Shoes",
+    "gender": "Men",
+    "price": 1950,
+    "image": "/images/products/shoe-pair.png",
+    "gallery": [
+      "/images/products/shoe-pair.png",
+      "/images/products/shoe-1.png",
+      "/images/products/shoe-profile.png"
+    ],
+    "sizes": [
+      "US 8",
+      "US 8.5",
+      "US 9",
+      "US 9.5",
+      "US 10",
+      "US 10.5",
+      "US 11",
+      "US 12"
+    ],
+    "colors": [
+      {
+        "name": "Volt & Royal Pair",
+        "hex": "#8EF03A",
+        "image": "/images/products/shoe-pair.png"
+      },
+      {
+        "name": "Cobalt Single",
+        "hex": "#00E5FF",
+        "image": "/images/products/shoe-2.png"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 112,
+    "description": "The complete athlete training duo. Displays both the upper engineered mesh and the multi-directional waffle traction lugs designed for road and track supremacy.",
+    "features": [
+      "Segmented waffle rubber outsole with crash rail",
+      "Full-length dual cushioning chambers",
+      "Seamless bootie knit collar construction",
+      "Shock-absorbing rubber pods"
+    ],
+    "isFeatured": true,
+    "inStock": true
+  },
+  {
+    "id": "shoe-5",
+    "slug": "stride-turbopulse-marathon-racer",
+    "name": "STRIDE Stealth Carbon Shadow",
+    "category": "Shoes",
+    "gender": "Unisex",
+    "price": 2100,
+    "originalPrice": 2450,
+    "image": "/images/products/shoe-5.png",
+    "gallery": [
+      "/images/products/shoe-5.png",
+      "/images/products/shoe-1.png",
+      "/images/products/shoe-profile.png"
+    ],
+    "sizes": [
+      "US 7",
+      "US 7.5",
+      "US 8",
+      "US 8.5",
+      "US 9",
+      "US 9.5",
+      "US 10",
+      "US 11"
+    ],
+    "colors": [
+      {
+        "name": "Triple Black",
+        "hex": "#11191C",
+        "image": "/images/products/shoe-5.png"
+      },
+      {
+        "name": "Volt Lime",
+        "hex": "#8EF03A",
+        "image": "/images/products/shoe-1.png"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 164,
+    "description": "Engineered for blackout aesthetics and race day supremacy. The Stealth Shadow dampens joint impact on long 30km+ workouts while providing an understated matte silhouette.",
+    "features": [
+      "Matte blackout engineered monofilament mesh",
+      "Tonal flywire lockdown harness",
+      "Reinforced forefoot durability zone",
+      "Zero-slip notched racing laces"
+    ],
+    "isFeatured": true,
+    "tag": "HOT",
+    "inStock": true
+  },
+  {
+    "id": "shoe-6",
+    "slug": "stride-cloudstrider-r1-road",
+    "name": "STRIDE CloudStrider Lateral Edition",
+    "category": "Shoes",
+    "gender": "Women",
+    "price": 1550,
+    "image": "/images/products/shoe-profile.png",
+    "gallery": [
+      "/images/products/shoe-profile.png",
+      "/images/products/shoe-1.png",
+      "/images/products/shoe-pair.png"
+    ],
+    "sizes": [
+      "US 6",
+      "US 6.5",
+      "US 7",
+      "US 7.5",
+      "US 8",
+      "US 8.5",
+      "US 9"
+    ],
+    "colors": [
+      {
+        "name": "Volt Green / Navy",
+        "hex": "#8EF03A",
+        "image": "/images/products/shoe-profile.png"
+      },
+      {
+        "name": "Electric Cyan",
+        "hex": "#00E5FF",
+        "image": "/images/products/shoe-2.png"
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 72,
+    "description": "The gold standard in protective, cloud-soft road running. Absorbs road vibration and guides foot strike naturally through high-mileage training blocks with a streamlined side profile.",
+    "features": [
+      "Maximum-cushion geometric foam pods",
+      "Engineered circular knit upper",
+      "Wide platform base for innate stability",
+      "Ortholite antimicrobial insole"
+    ],
+    "isFeatured": true,
+    "inStock": true
+  },
+  {
+    "id": "shoe-7",
+    "slug": "stride-hypertrack-speed-spikes",
+    "name": "STRIDE HyperTrack Speed Spikes",
+    "category": "Shoes",
+    "gender": "Men",
+    "price": 1750,
+    "image": "/images/products/shoe-1.png",
+    "gallery": [
+      "/images/products/shoe-1.png",
+      "/images/products/shoe-profile.png"
+    ],
+    "sizes": [
+      "US 7.5",
+      "US 8",
+      "US 8.5",
+      "US 9",
+      "US 9.5",
+      "US 10",
+      "US 10.5",
+      "US 11"
+    ],
+    "colors": [
+      {
+        "name": "Volt Lime",
+        "hex": "#8EF03A",
+        "image": "/images/products/shoe-1.png"
+      },
+      {
+        "name": "Volt Blue",
+        "hex": "#00E5FF",
+        "image": "/images/products/shoe-2.png"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 63,
+    "description": "Built for 400m-1500m track precision. Features a rigid full-length spike plate and ultra-thin lockdown harness for blistering straightaway acceleration.",
+    "features": [
+      "Removable spike configuration",
+      "Rigid propulsion plate",
+      "Ultralight skin-touch mono-mesh",
+      "Race-approved stack height"
+    ],
+    "isFeatured": true,
+    "tag": "NEW",
+    "inStock": true
+  },
+  {
+    "id": "shoe-8",
+    "slug": "stride-shiftrunner-zero-junior",
+    "name": "STRIDE ShiftRunner Zero Junior",
+    "category": "Shoes",
+    "gender": "Kids",
+    "price": 1200,
+    "originalPrice": 1400,
+    "image": "/images/products/shoe-profile.png",
+    "gallery": [
+      "/images/products/shoe-profile.png",
+      "/images/products/shoe-1.png"
+    ],
+    "sizes": [
+      "3Y",
+      "3.5Y",
+      "4Y",
+      "4.5Y",
+      "5Y",
+      "5.5Y",
+      "6Y",
+      "6.5Y"
+    ],
+    "colors": [
+      {
+        "name": "Neon Volt",
+        "hex": "#8EF03A",
+        "image": "/images/products/shoe-profile.png"
+      },
+      {
+        "name": "Cyan Blue",
+        "hex": "#00E5FF",
+        "image": "/images/products/shoe-2.png"
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 54,
+    "description": "High-performance energy and durability tailored for growing athletes. Features scuff-resistant toe wraps and easy-adjust elastic kinetic lacing.",
+    "features": [
+      "Reinforced durability toe cap",
+      "High-density bounce foam",
+      "Flexible forefoot natural flexion grooves",
+      "Non-marking indoor & outdoor rubber outsole"
+    ],
+    "isFeatured": true,
+    "tag": "SALE",
+    "inStock": true
+  },
+  {
+    "id": "apparel-1",
+    "slug": "stride-aeroflow-tech-fleece-hoodie",
+    "name": "STRIDE Aeroflow Tech Fleece Hoodie",
+    "category": "Apparel",
+    "gender": "Men",
+    "price": 850,
+    "originalPrice": 1050,
+    "image": "/images/products/apparel-1.svg",
+    "gallery": [
+      "/images/products/apparel-1.svg",
+      "/images/products/apparel-1-alt1.svg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      {
+        "name": "Obsidian Black",
+        "hex": "#11191C"
+      },
+      {
+        "name": "Heather Charcoal",
+        "hex": "#263236"
+      },
+      {
+        "name": "Electric Cyan Trim",
+        "hex": "#00E5FF"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 87,
+    "description": "Engineered with premium double-knit thermal fleece that traps warmth without bulk. Features bonded zip pockets and aerodynamic 4-panel scuba hood.",
+    "features": [
+      "Thermal micro-fleece insulation",
+      "Bonded waterproof zipper chest pocket",
+      "Ergonomic raglan sleeves for athletic mobility",
+      "Reflective STRIDE spine tape"
+    ],
+    "isFeatured": false,
+    "tag": "BEST SELLER",
+    "inStock": true
+  },
+  {
+    "id": "apparel-2",
+    "slug": "stride-seamless-kinetic-performance-tee",
+    "name": "STRIDE Seamless Kinetic Performance Tee",
+    "category": "Apparel",
+    "gender": "Unisex",
+    "price": 420,
+    "image": "/images/products/apparel-2.svg",
+    "gallery": [
+      "/images/products/apparel-2.svg"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Cyber Blue",
+        "hex": "#00E5FF"
+      },
+      {
+        "name": "Volt Lime",
+        "hex": "#8EF03A"
+      },
+      {
+        "name": "Deep Space",
+        "hex": "#182125"
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 110,
+    "description": "Zero chafe, zero distraction. Knit with open mesh body-mapping ventilation zones where heat builds up most during high-intensity workouts.",
+    "features": [
+      "Seamless anti-chafing body construction",
+      "Quick-drying moisture management fabric",
+      "Silicone grip hem to prevent ride-up",
+      "Ultra-light 105g weight"
+    ],
+    "isFeatured": false,
+    "inStock": true
+  },
+  {
+    "id": "bag-1",
+    "slug": "stride-stormproof-35l-commuter-duffel",
+    "name": "STRIDE StormProof 35L Duffel Bag",
+    "category": "Bags",
+    "gender": "Unisex",
+    "price": 750,
+    "originalPrice": 900,
+    "image": "/images/products/bag-1.svg",
+    "gallery": [
+      "/images/products/bag-1.svg"
+    ],
+    "sizes": [
+      "35L One Size"
+    ],
+    "colors": [
+      {
+        "name": "Matte Carbon",
+        "hex": "#182125"
+      },
+      {
+        "name": "Stealth Cyan",
+        "hex": "#00E5FF"
+      }
+    ],
+    "rating": 4.9,
+    "reviewsCount": 65,
+    "description": "Weather-resistant 900D coated nylon duffel featuring a ventilated exterior shoe garage and padded 16\" laptop sleeve for seamless gym-to-work transitions.",
+    "features": [
+      "Waterproof coated tarpaulin base panel",
+      "Isolated ventilated sneaker compartment",
+      "Removable ergonomic shoulder harness",
+      "TSA-ready passport and key clip pocket"
+    ],
+    "isFeatured": false,
+    "tag": "NEW",
+    "inStock": true
+  },
+  {
+    "id": "sock-1",
+    "slug": "stride-ultracushion-crew-socks-3pack",
+    "name": "STRIDE UltraCushion Crew Socks (3-Pack)",
+    "category": "Socks",
+    "gender": "Unisex",
+    "price": 220,
+    "image": "/images/products/sock-1.svg",
+    "gallery": [
+      "/images/products/sock-1.svg"
+    ],
+    "sizes": [
+      "M (US 6-9)",
+      "L (US 9.5-12)",
+      "XL (US 12+)"
+    ],
+    "colors": [
+      {
+        "name": "Multi-Pack (Black / White / Neon)",
+        "hex": "#00E5FF"
+      },
+      {
+        "name": "Triple Obsidian",
+        "hex": "#11191C"
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 198,
+    "description": "Targeted arch compression and blister-prevention padding under the forefoot and Achilles tendon. Features silver-ion anti-odor yarn.",
+    "features": [
+      "High-density terry heel & toe cushioning",
+      "Dynamic 360-degree midfoot compression band",
+      "Seamless linked toe seam eliminates friction",
+      "Anti-odor antimicrobial treatment"
+    ],
+    "isFeatured": false,
+    "inStock": true
+  },
+  {
+    "id": "cap-1",
+    "slug": "stride-aerovent-running-visor-cap",
+    "name": "STRIDE AeroVent Running Visor Cap",
+    "category": "Caps",
+    "gender": "Unisex",
+    "price": 280,
+    "image": "/images/products/cap-1.svg",
+    "gallery": [
+      "/images/products/cap-1.svg"
+    ],
+    "sizes": [
+      "One Size (Adjustable)"
+    ],
+    "colors": [
+      {
+        "name": "Stealth Black / Cyan",
+        "hex": "#00E5FF"
+      },
+      {
+        "name": "Pure White / Black",
+        "hex": "#FFFFFF"
+      },
+      {
+        "name": "Solar Lime",
+        "hex": "#8EF03A"
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 74,
+    "description": "Ultra-light 42g running cap with laser-perforated side ventilation and glare-absorbing dark underbill. Quick-adjust bungee clasp ensures snug fit in high wind.",
+    "features": [
+      "UPF 50+ ultraviolet sun protection",
+      "Laser-cut breathable side mesh panels",
+      "Moisture-wicking internal sweatband",
+      "Crushable packable soft brim"
+    ],
+    "isFeatured": false,
+    "inStock": true
+  },
+  {
+    "id": "bottle-1",
+    "slug": "stride-hydrolock-950ml-steel-bottle",
+    "name": "STRIDE HydroLock 950ml Steel Bottle",
+    "category": "Bottles",
+    "gender": "Unisex",
+    "price": 340,
+    "originalPrice": 400,
+    "image": "/images/products/bottle-1.svg",
+    "gallery": [
+      "/images/products/bottle-1.svg"
+    ],
+    "sizes": [
+      "950ml (32 oz)"
+    ],
+    "colors": [
+      {
+        "name": "Matte Obsidian / Cyan",
+        "hex": "#00E5FF"
+      },
+      {
+        "name": "Brushed Silver",
+        "hex": "#D1D5DB"
+      },
+      {
+        "name": "Solar Orange Accent",
+        "hex": "#FF7A1A"
+      }
+    ],
+    "rating": 5,
+    "reviewsCount": 152,
+    "description": "Double-walled vacuum insulated pro grade 18/8 stainless steel keeps water ice-cold for 24 hours. Features high-flow leakproof sports chug lid and durable powder coat.",
+    "features": [
+      "24 hours cold, 12 hours piping hot",
+      "100% BPA-free food-grade 18/8 stainless steel",
+      "No-sweat condensation-free exterior",
+      "Ergonomic flexible carry loop handle"
+    ],
+    "isFeatured": false,
+    "tag": "HOT",
+    "inStock": true
+  },
+  {
+    "id": "apparel-3",
+    "slug": "stride-speedvent-5-aero-split-shorts",
+    "name": "STRIDE SpeedVent 5\" Aero Split Shorts",
+    "category": "Apparel",
+    "gender": "Men",
+    "price": 490,
+    "image": "/images/products/apparel-3.svg",
+    "gallery": [
+      "/images/products/apparel-3.svg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      {
+        "name": "Obsidian",
+        "hex": "#11191C"
+      },
+      {
+        "name": "Electric Cyan",
+        "hex": "#00E5FF"
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 89,
+    "description": "Engineered for maximum leg turnover with deep side splits and lightweight breathable brief liner. Includes bounce-free center-back zip phone pocket.",
+    "features": [
+      "4-way stretch woven ripstop fabric",
+      "Bounce-free sweatproof center zippered pocket",
+      "Supportive moisture-wicking boxer-brief liner",
+      "Side nutrition gel drop-in slots"
+    ],
+    "isFeatured": false,
+    "inStock": true
+  },
+  {
+    "id": "bag-2",
+    "slug": "stride-crossbody-modular-utility-pack",
+    "name": "STRIDE CrossBody Modular Utility Pack",
+    "category": "Bags",
+    "gender": "Unisex",
+    "price": 460,
+    "originalPrice": 550,
+    "image": "/images/products/bag-2.svg",
+    "gallery": [
+      "/images/products/bag-2.svg"
+    ],
+    "sizes": [
+      "4.5L One Size"
+    ],
+    "colors": [
+      {
+        "name": "Carbon Black",
+        "hex": "#11191C"
+      },
+      {
+        "name": "Neon Accent Cord",
+        "hex": "#8EF03A"
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 43,
+    "description": "Hands-free agility for workouts and urban commutes. Compact 4.5L sling with dual zippered compartments, internal mesh organizers, and quick-release tactical buckle.",
+    "features": [
+      "Weather-resistant Cordura construction",
+      "Heavy-duty magnetic FIDLOCK quick-release clasp",
+      "Fleece-lined sunglasses & phone pocket",
+      "Adjustable reversible ambidextrous strap"
+    ],
+    "isFeatured": false,
+    "inStock": true
+  }
+]

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, Heart, ShoppingBag, Menu, X, ArrowRight } from 'lucide-react';
+import { Search, Heart, ShoppingBag, Menu, X, ArrowRight, Shield } from 'lucide-react';
 import Logo from '@/components/ui/Logo';
 import { useCart } from '@/context/CartContext';
 import { cn } from '@/lib/utils';
@@ -137,6 +137,16 @@ export default function Navbar({ cartCount }: NavbarProps = {}) {
               )}
             </button>
 
+            {/* Admin Portal Link */}
+            <Link
+              href="/admin"
+              aria-label="Admin Dashboard"
+              title="Store Admin Dashboard"
+              className="w-10 h-10 rounded-full border border-white/10 bg-white/[0.03] hover:bg-white/10 hover:border-[#00E5FF]/40 flex items-center justify-center text-white/50 hover:text-[#00E5FF] transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-[#00E5FF]"
+            >
+              <Shield className="w-4 h-4" />
+            </Link>
+
             {/* Mobile Menu Toggle */}
             <div className="lg:hidden">
               <button
@@ -227,6 +237,15 @@ export default function Navbar({ cartCount }: NavbarProps = {}) {
                 <ShoppingBag className="w-4 h-4" />
                 <span>View Cart ({totalItems})</span>
               </button>
+
+              <Link
+                href="/admin"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full py-3 rounded-full border border-white/10 bg-white/5 text-white/70 hover:text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2"
+              >
+                <Shield className="w-4 h-4 text-[#00E5FF]" />
+                <span>Admin Dashboard</span>
+              </Link>
             </div>
           </motion.div>
         )}

@@ -11,7 +11,8 @@ import {
   ArrowUpDown,
   Layers,
 } from 'lucide-react';
-import { otherProducts, allProducts, Product } from '@/data/products';
+import { otherProducts as fallbackOtherProducts, Product } from '@/data/products';
+import { useProducts } from '@/context/ProductContext';
 import ProductCard from '@/components/products/ProductCard';
 import { cn } from '@/lib/utils';
 
@@ -37,13 +38,24 @@ const COMMON_COLORS = [
 ];
 
 export default function OtherProducts() {
-  const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('All');
+  const { otherProducts, categories: dynamicCategories } = useProducts();
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedGender, setSelectedGender] = useState<string>('All');
   const [selectedColor, setSelectedColor] = useState<string>('All');
   const [selectedSize, setSelectedSize] = useState<string>('All');
   const [maxPrice, setMaxPrice] = useState<number>(2000);
   const [sortBy, setSortBy] = useState<SortOption>('featured');
   const [showFiltersMobile, setShowFiltersMobile] = useState<boolean>(false);
+
+  const allCategoryTabs = useMemo(() => {
+    const list = ['All', 'Apparel', 'Bags', 'Socks', 'Caps', 'Bottles'];
+    dynamicCategories.forEach((cat) => {
+      if (cat !== 'Shoes' && !list.some((c) => c.toLowerCase() === cat.toLowerCase())) {
+        list.push(cat);
+      }
+    });
+    return list;
+  }, [dynamicCategories]);
 
   // Sync URL query params (from Navbar clicks e.g. /#catalog?gender=Men)
   React.useEffect(() => {
@@ -89,7 +101,7 @@ export default function OtherProducts() {
     const sizeSet = new Set<string>();
     otherProducts.forEach((p) => p.sizes.forEach((s) => sizeSet.add(s)));
     return ['All', ...Array.from(sizeSet).slice(0, 8)];
-  }, []);
+  }, [otherProducts]);
 
   // Filter and sort items
   const filteredProducts = useMemo(() => {
@@ -144,6 +156,7 @@ export default function OtherProducts() {
 
     return result;
   }, [
+    otherProducts,
     selectedCategory,
     selectedGender,
     maxPrice,
@@ -212,7 +225,7 @@ export default function OtherProducts() {
 
         {/* Category Pills Header Bar */}
         <div className="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-none no-scrollbar mb-8">
-          {CATEGORIES.map((cat) => {
+          {allCategoryTabs.map((cat) => {
             const isActive = selectedCategory === cat;
             return (
               <button

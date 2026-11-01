@@ -1,22 +1,35 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
-import { allProducts, getProductBySlug } from '@/data/products';
+import { allProducts as fallbackProducts, getProductBySlug as getFallbackProduct } from '@/data/products';
+import { getStoredProducts, getStoredProductBySlug } from '@/lib/productsStore';
 import ProductDetailsClient from '@/components/products/ProductDetailsClient';
+
+export const dynamicParams = true;
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return allProducts.map((p) => ({
-    slug: p.slug,
-  }));
+  try {
+    const products = await getStoredProducts();
+    return products.map((p) => ({
+      slug: p.slug,
+    }));
+  } catch {
+    return fallbackProducts.map((p) => ({
+      slug: p.slug,
+    }));
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  let product = await getStoredProductBySlug(slug);
+  if (!product) {
+    product = getFallbackProduct(slug);
+  }
 
   if (!product) {
     return {
@@ -44,14 +57,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  let product = await getStoredProductBySlug(slug);
+  if (!product) {
+    product = getFallbackProduct(slug);
+  }
 
   if (!product) {
     notFound();
   }
 
-  // Find 4 related products (prefer same category or other featured items)
-  const relatedProducts = allProducts
+  const all = await getStoredProducts();
+  const relatedProducts = all
     .filter((p) => p.id !== product.id)
     .sort((a, b) => (a.category === product.category ? -1 : 1))
     .slice(0, 4);

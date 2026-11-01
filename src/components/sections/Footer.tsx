@@ -27,6 +27,7 @@ const companyLinks: FooterLink[] = [
   { label: 'Kinetic Lab Tech', href: '/#technology' },
   { label: 'Athlete Roster', href: '/#athletes' },
   { label: 'Sustainability & Circularity', href: '/#sustainability' },
+  { label: 'Store Admin Portal', href: '/admin' },
   { label: 'Careers', href: '/#careers' },
 ];
 

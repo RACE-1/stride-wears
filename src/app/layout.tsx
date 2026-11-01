@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Noto_Sans, IBM_Plex_Sans } from 'next/font/google';
 import './globals.css';
 import { brand } from '@/lib/brand';
+import { ProductProvider } from '@/context/ProductContext';
 import { CartProvider } from '@/context/CartContext';
 import Navbar from '@/components/navigation/Navbar';
 import CartDrawer from '@/components/cart/CartDrawer';
@@ -66,15 +67,17 @@ export default function RootLayout({
         <meta name="theme-color" content="#11191C" />
       </head>
       <body className="min-h-screen bg-[var(--bg)] text-ink antialiased overflow-x-hidden font-body selection:bg-[var(--accent)] selection:text-[var(--accent-ink)]">
-        <CartProvider>
-          <Navbar />
-          {children}
-          <CartDrawer />
-          <QuickViewModal />
-          <SearchModal />
-          <WishlistModal />
-          <CheckoutModal />
-        </CartProvider>
+        <ProductProvider>
+          <CartProvider>
+            <Navbar />
+            {children}
+            <CartDrawer />
+            <QuickViewModal />
+            <SearchModal />
+            <WishlistModal />
+            <CheckoutModal />
+          </CartProvider>
+        </ProductProvider>
       </body>
     </html>
   );

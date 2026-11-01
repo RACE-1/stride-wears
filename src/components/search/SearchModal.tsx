@@ -6,10 +6,11 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, X, ArrowRight } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
-import { allProducts } from '@/data/products';
+import { useProducts } from '@/context/ProductContext';
 
 export default function SearchModal() {
   const { isSearchOpen, closeSearch, searchQuery, setSearchQuery } = useCart();
+  const { products } = useProducts();
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ export default function SearchModal() {
   if (!isSearchOpen) return null;
 
   const filtered = searchQuery.trim()
-    ? allProducts.filter(
+    ? products.filter(
         (p) =>
           p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
           p.category.toLowerCase().includes(searchQuery.toLowerCase()) ||

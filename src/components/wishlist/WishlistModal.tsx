@@ -6,10 +6,11 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Heart, ShoppingBag, Trash2, ArrowRight } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
-import { allProducts } from '@/data/products';
+import { useProducts } from '@/context/ProductContext';
 
 export default function WishlistModal() {
   const { isWishlistOpen, closeWishlist, wishlist, toggleWishlist, addToCart } = useCart();
+  const { products } = useProducts();
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -34,7 +35,7 @@ export default function WishlistModal() {
 
   if (!isWishlistOpen) return null;
 
-  const savedProducts = allProducts.filter((p) => wishlist.includes(p.id));
+  const savedProducts = products.filter((p) => wishlist.includes(p.id));
 
   return (
     <AnimatePresence>
