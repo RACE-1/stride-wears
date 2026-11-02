@@ -3,10 +3,11 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { ArrowUp, Mail, Check, ShieldCheck, CreditCard } from 'lucide-react';
-import { FaFacebookF, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaYoutube, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Logo from '@/components/ui/Logo';
 import { brand } from '@/lib/brand';
+import { whatsappUrl, WHATSAPP_GENERAL_MESSAGE } from '@/lib/whatsapp';
 
 interface FooterLink {
   label: string;
@@ -209,6 +210,19 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* WhatsApp Contact */}
+            <a
+              href={whatsappUrl(WHATSAPP_GENERAL_MESSAGE)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 flex items-center gap-2.5 px-4 py-2.5 rounded-xl border border-[#25D366]/30 bg-[#25D366]/10 hover:bg-[#25D366]/20 transition-all group w-fit"
+            >
+              <FaWhatsapp className="w-5 h-5 text-[#25D366]" />
+              <span className="text-xs sm:text-sm font-semibold text-[#25D366] group-hover:text-[#25D366]">
+                Chat on WhatsApp
+              </span>
+            </a>
           </div>
         </div>
 

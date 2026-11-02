@@ -10,6 +10,7 @@ import QuickViewModal from '@/components/products/QuickViewModal';
 import SearchModal from '@/components/search/SearchModal';
 import WishlistModal from '@/components/wishlist/WishlistModal';
 import CheckoutModal from '@/components/checkout/CheckoutModal';
+import WhatsAppFloat from '@/components/whatsapp/WhatsAppFloat';
 
 const notoSans = Noto_Sans({
   subsets: ['latin'],
@@ -76,6 +77,7 @@ export default function RootLayout({
             <SearchModal />
             <WishlistModal />
             <CheckoutModal />
+            <WhatsAppFloat />
           </CartProvider>
         </ProductProvider>
       </body>
