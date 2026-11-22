@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Noto_Sans, IBM_Plex_Sans } from 'next/font/google';
 import './globals.css';
 import { brand } from '@/lib/brand';
@@ -25,6 +25,13 @@ const ibmPlexSans = IBM_Plex_Sans({
   variable: '--font-display',
   display: 'swap',
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#11191C',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
@@ -64,9 +71,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${notoSans.variable} ${ibmPlexSans.variable} dark scroll-smooth`}>
-      <head>
-        <meta name="theme-color" content="#11191C" />
-      </head>
       <body className="min-h-screen bg-[var(--bg)] text-ink antialiased overflow-x-hidden font-body selection:bg-[var(--accent)] selection:text-[var(--accent-ink)]">
         <ProductProvider>
           <CartProvider>

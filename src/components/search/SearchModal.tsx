@@ -129,10 +129,10 @@ export default function SearchModal() {
                     key={product.id}
                     href={`/product/${product.slug}`}
                     onClick={closeSearch}
-                    className="flex items-center justify-between p-3 rounded-2xl hover:bg-white/5 transition-colors group"
+                    className="flex items-center justify-between gap-3 p-3 rounded-2xl hover:bg-white/5 transition-colors group"
                   >
-                    <div className="flex items-center gap-3.5">
-                      <div className="w-14 h-14 rounded-xl bg-black/40 border border-white/10 flex items-center justify-center p-1 overflow-hidden shrink-0">
+                    <div className="flex items-center gap-3.5 min-w-0">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-black/40 border border-white/10 flex items-center justify-center p-1 overflow-hidden shrink-0">
                         <Image
                           src={product.image}
                           alt={product.name}
@@ -141,21 +141,21 @@ export default function SearchModal() {
                           className="w-full h-full object-contain group-hover:scale-105 transition-transform"
                         />
                       </div>
-                      <div>
-                        <h4 className="text-white text-sm font-semibold group-hover:text-[#00E5FF] transition-colors">
+                      <div className="min-w-0">
+                        <h4 className="text-white text-xs sm:text-sm font-semibold group-hover:text-[#00E5FF] transition-colors truncate">
                           {product.name}
                         </h4>
-                        <span className="text-xs text-white/50">
+                        <span className="text-[11px] sm:text-xs text-white/50 block truncate">
                           {product.category} • {product.gender}
                         </span>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3">
-                      <span className="font-display font-bold text-white text-sm">
+                    <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                      <span className="font-display font-bold text-white text-xs sm:text-sm">
                         GH₵ {product.price.toLocaleString()}
                       </span>
-                      <ArrowRight className="w-4 h-4 text-white/30 group-hover:text-[#00E5FF] group-hover:translate-x-1 transition-all" />
+                      <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white/30 group-hover:text-[#00E5FF] group-hover:translate-x-1 transition-all" />
                     </div>
                   </Link>
                 ))

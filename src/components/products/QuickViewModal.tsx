@@ -71,7 +71,7 @@ export default function QuickViewModal() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-          className="relative w-full max-w-4xl bg-[#11191C] border border-white/15 rounded-[28px] sm:rounded-[36px] overflow-hidden shadow-2xl z-10 my-auto"
+          className="relative w-full max-w-4xl max-h-[92vh] bg-[#11191C] border border-white/15 rounded-[28px] sm:rounded-[36px] overflow-y-auto shadow-2xl z-10 my-auto"
         >
           {/* Close button */}
           <button
@@ -208,7 +208,7 @@ export default function QuickViewModal() {
                       Size Guide
                     </span>
                   </div>
-                  <div className="grid grid-cols-4 gap-2">
+                  <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
                     {quickViewProduct.sizes.map((sz) => (
                       <button
                         key={sz}

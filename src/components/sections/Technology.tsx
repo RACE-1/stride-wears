@@ -77,7 +77,7 @@ export default function Technology() {
         backgroundImage: 'radial-gradient(ellipse at 50% 50%, var(--bg-2) 0%, #101618 100%)',
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         {/* Header with eyebrow and title */}
         <motion.div
           initial={prefersReducedMotion ? false : { opacity: 0, y: 30 }}

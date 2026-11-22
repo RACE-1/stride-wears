@@ -106,6 +106,14 @@ a {
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+@utility scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 /* Standard classes fallback */
 .glass {
   background-color: var(--glass);
@@ -131,6 +139,30 @@ a {
 .bg-dark {
   background-color: var(--bg);
   background-image: radial-gradient(circle at center, var(--bg) 0%, #101618 100%);
+}
+
+/* Scrollbar hide utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Touch device: show Quick View always */
+@media (hover: none) and (pointer: coarse) {
+  .touch-show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
 }
 
 /* Global Prefers-Reduced-Motion Rules */

@@ -127,9 +127,9 @@ export default function Footer() {
 
       {/* Main Footer Links & Columns */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-16 pb-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
-          {/* Brand Col (2 cols on lg) */}
-          <div className="lg:col-span-2 flex flex-col items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
+          {/* Brand Col (2 cols on lg, full width on sm) */}
+          <div className="sm:col-span-2 lg:col-span-2 flex flex-col items-start">
             <Logo />
             <p className="mt-4 mb-6 text-sm text-white/60 leading-relaxed max-w-sm">
               STRIDE is a high-performance athletic footwear and sportswear engineering house. Designed for marathoners, track athletes, and uncompromising movers.

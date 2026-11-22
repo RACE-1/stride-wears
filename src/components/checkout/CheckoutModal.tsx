@@ -81,17 +81,17 @@ export default function CheckoutModal() {
           initial={{ opacity: 0, scale: 0.95, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 15 }}
-          className="relative w-full max-w-2xl max-h-[90vh] rounded-3xl bg-[#121A1D] border border-white/15 p-6 sm:p-8 flex flex-col z-10 shadow-2xl overflow-y-auto"
+          className="relative w-full max-w-2xl max-h-[92vh] rounded-3xl bg-[#121A1D] border border-white/15 p-4 sm:p-8 flex flex-col z-10 shadow-2xl overflow-y-auto"
         >
           {/* Header */}
-          <div className="flex items-center justify-between pb-5 border-b border-white/10 shrink-0">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-[#00E5FF]/10 border border-[#00E5FF]/30 flex items-center justify-center text-[#00E5FF]">
-                <ShieldCheck className="w-5 h-5" />
+          <div className="flex items-center justify-between pb-4 sm:pb-5 border-b border-white/10 shrink-0">
+            <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-[#00E5FF]/10 border border-[#00E5FF]/30 flex items-center justify-center text-[#00E5FF] shrink-0">
+                <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <div>
-                <h2 className="text-xl font-black text-white">STRIDE Express Checkout</h2>
-                <p className="text-xs text-white/50">Official Ghana Dispatch & Secure Escrow</p>
+              <div className="min-w-0">
+                <h2 className="text-lg sm:text-xl font-black text-white truncate">STRIDE Express Checkout</h2>
+                <p className="text-[11px] sm:text-xs text-white/50 truncate">Official Ghana Dispatch & Secure Escrow</p>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ export default function CheckoutModal() {
               type="button"
               onClick={closeCheckout}
               disabled={isSubmitting}
-              className="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white flex items-center justify-center transition-colors cursor-pointer"
+              className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white flex items-center justify-center transition-colors cursor-pointer shrink-0 ml-2"
             >
               <X className="w-4 h-4" />
             </button>

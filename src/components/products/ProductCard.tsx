@@ -133,11 +133,11 @@ export default function ProductCard({
             />
           </Link>
 
-          {/* Quick View overlay button */}
+          {/* Quick View overlay button — always visible on touch, hover-reveal on desktop */}
           <button
             type="button"
             onClick={handleQuickView}
-            className="absolute bottom-3 inset-x-3 py-2 px-3 rounded-xl bg-[#11191C]/85 backdrop-blur-md border border-white/15 text-white text-xs font-semibold tracking-wide flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-xl hover:bg-[#00E5FF] hover:text-black hover:border-[#00E5FF]"
+            className="absolute bottom-3 inset-x-3 py-2 px-3 rounded-xl bg-[#11191C]/85 backdrop-blur-md border border-white/15 text-white text-xs font-semibold tracking-wide flex items-center justify-center gap-2 opacity-100 translate-y-0 lg:opacity-0 lg:translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 shadow-xl hover:bg-[#00E5FF] hover:text-black hover:border-[#00E5FF] touch-show"
           >
             <Eye className="w-3.5 h-3.5" />
             Quick View

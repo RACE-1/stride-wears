@@ -107,12 +107,13 @@ export default function WishlistModal() {
               savedProducts.map((product) => (
                 <div
                   key={product.id}
-                  className="flex items-center justify-between gap-4 p-4 rounded-2xl bg-[#162227] border border-white/10 hover:border-white/20 transition-all group"
+                  className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 p-4 rounded-2xl bg-[#162227] border border-white/10 hover:border-white/20 transition-all group"
                 >
+                  <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
                   <Link
                     href={`/product/${product.slug}`}
                     onClick={closeWishlist}
-                    className="relative w-20 h-20 rounded-xl bg-gradient-to-b from-[#1F2E35] to-[#121B1E] flex items-center justify-center p-2 shrink-0 overflow-hidden"
+                    className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-gradient-to-b from-[#1F2E35] to-[#121B1E] flex items-center justify-center p-2 shrink-0 overflow-hidden"
                   >
                     <Image
                       src={product.image}
@@ -144,8 +145,9 @@ export default function WishlistModal() {
                       )}
                     </div>
                   </div>
+                  </div>
 
-                  <div className="flex items-center gap-2 shrink-0">
+                  <div className="flex items-center gap-2 shrink-0 ml-auto sm:ml-0">
                     <button
                       type="button"
                       onClick={() => {

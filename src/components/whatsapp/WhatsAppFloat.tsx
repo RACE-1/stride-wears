@@ -37,7 +37,7 @@ export default function WhatsAppFloat() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.6, y: 20 }}
           transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-          className="fixed bottom-6 right-6 z-50 flex items-end gap-3"
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex items-end gap-2.5 sm:gap-3"
         >
           {/* Tooltip bubble */}
           <AnimatePresence>
@@ -46,7 +46,7 @@ export default function WhatsAppFloat() {
                 initial={{ opacity: 0, x: 10 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 10 }}
-                className="relative bg-white text-gray-900 text-xs sm:text-sm font-medium px-4 py-2.5 rounded-2xl shadow-xl max-w-[200px] leading-snug"
+                className="hidden sm:block relative bg-white text-gray-900 text-xs sm:text-sm font-medium px-4 py-2.5 rounded-2xl shadow-xl max-w-[200px] leading-snug"
               >
                 <span>Need help? Chat with us on WhatsApp!</span>
 
@@ -75,7 +75,7 @@ export default function WhatsAppFloat() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"
-            className="group relative flex items-center justify-center w-[60px] h-[60px] rounded-full shadow-[0_4px_24px_rgba(37,211,102,0.45)] hover:shadow-[0_6px_32px_rgba(37,211,102,0.6)] hover:scale-105 active:scale-95 transition-all duration-200"
+            className="group relative flex items-center justify-center w-[52px] h-[52px] sm:w-[60px] sm:h-[60px] rounded-full shadow-[0_4px_24px_rgba(37,211,102,0.45)] hover:shadow-[0_6px_32px_rgba(37,211,102,0.6)] hover:scale-105 active:scale-95 transition-all duration-200"
             style={{ backgroundColor: '#25D366' }}
           >
             {/* Pulse ring */}
@@ -83,7 +83,7 @@ export default function WhatsAppFloat() {
 
             {/* Official WhatsApp SVG icon */}
             <svg
-              className="relative w-8 h-8 text-white"
+              className="relative w-7 h-7 sm:w-8 sm:h-8 text-white"
               viewBox="0 0 24 24"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"

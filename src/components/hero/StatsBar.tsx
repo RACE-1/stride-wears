@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import { SlideColorway } from '@/lib/data';
 
@@ -10,6 +10,14 @@ interface StatsBarProps {
 
 export default function StatsBar({ currentSlide }: StatsBarProps) {
   const prefersReducedMotion = useReducedMotion();
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const checkDesktop = () => setIsDesktop(window.innerWidth >= 1024);
+    checkDesktop();
+    window.addEventListener('resize', checkDesktop);
+    return () => window.removeEventListener('resize', checkDesktop);
+  }, []);
 
   const statItems = [
     { key: 'price', value: currentSlide.price, label: 'Price' },
@@ -35,10 +43,9 @@ export default function StatsBar({ currentSlide }: StatsBarProps) {
           WebkitBackdropFilter: 'blur(14px)',
           border: '1px solid rgba(200, 240, 170, 0.25)',
           boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.15)',
-          transform:
-            typeof window !== 'undefined' && window.innerWidth < 1024
-              ? 'none'
-              : 'perspective(900px) rotateX(7deg) rotateY(-5deg) rotateZ(-3deg)',
+          transform: isDesktop
+            ? 'perspective(900px) rotateX(7deg) rotateY(-5deg) rotateZ(-3deg)'
+            : 'none',
         }}
       >
         {/* Glowing Accent Orb 1: Bottom-Left Corner */}

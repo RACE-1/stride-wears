@@ -18,7 +18,7 @@ export default function HeroCopy() {
   return (
     <div
       data-component="HeroCopy"
-      className="relative z-20 flex flex-col items-start w-full lg:w-auto lg:absolute lg:left-0 lg:top-[16vh] xl:top-[18vh] pointer-events-auto"
+      className="relative z-20 flex flex-col items-start w-full lg:w-auto lg:absolute lg:left-0 lg:top-[16vh] xl:top-[18vh] pointer-events-auto overflow-hidden"
     >
       {/* Headline line 1: "Born" in var(--accent) */}
       <motion.div
@@ -26,7 +26,7 @@ export default function HeroCopy() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
       >
-        <span className="font-body font-light text-[var(--accent)] text-[14vw] sm:text-[10vw] lg:text-[clamp(52px,5.5vw,96px)] leading-none block select-none">
+        <span className="font-body font-light text-[var(--accent)] text-[clamp(42px,14vw,56px)] sm:text-[10vw] lg:text-[clamp(52px,5.5vw,96px)] leading-none block select-none">
           {brand.headlineLight}
         </span>
       </motion.div>
@@ -38,7 +38,7 @@ export default function HeroCopy() {
         transition={{ duration: 0.8, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
         className="-mt-1 lg:-mt-2"
       >
-        <span className="font-display font-bold text-white text-[19vw] sm:text-[14vw] lg:text-[clamp(68px,8.5vw,144px)] leading-[0.9] tracking-[-0.02em] block select-none">
+        <span className="font-display font-bold text-white text-[clamp(52px,19vw,70px)] sm:text-[14vw] lg:text-[clamp(68px,8.5vw,144px)] leading-[0.9] tracking-[-0.02em] block select-none">
           {brand.headlineBold}
         </span>
       </motion.div>
