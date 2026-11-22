@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, Heart, ShoppingBag, Menu, X, ArrowRight, Shield } from 'lucide-react';
+import { Search, Heart, ShoppingBag, Menu, X, ArrowRight } from 'lucide-react';
 import Logo from '@/components/ui/Logo';
 import { useCart } from '@/context/CartContext';
 import { cn } from '@/lib/utils';
@@ -92,7 +92,7 @@ export default function Navbar({ cartCount }: NavbarProps = {}) {
             ))}
           </nav>
 
-          {/* Right Action Icons: Search, Wishlist, Cart */}
+          {/* Right Action Icons: Search, Wishlist (desktop), Cart, Menu (mobile) */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             {/* Search Trigger */}
             <button
@@ -104,12 +104,12 @@ export default function Navbar({ cartCount }: NavbarProps = {}) {
               <Search className="w-4 h-4" />
             </button>
 
-            {/* Wishlist Trigger */}
+            {/* Wishlist Trigger (hidden on phones, lives in the mobile menu instead) */}
             <button
               type="button"
               onClick={openWishlist}
               aria-label="View Wishlist"
-              className="relative w-10 h-10 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-[#00E5FF] flex items-center justify-center text-white/80 hover:text-white transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-[#00E5FF]"
+              className="relative w-10 h-10 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-[#00E5FF] hidden sm:flex items-center justify-center text-white/80 hover:text-white transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-[#00E5FF]"
             >
               <Heart className="w-4 h-4" />
               {wishlist.length > 0 && (
@@ -136,16 +136,6 @@ export default function Navbar({ cartCount }: NavbarProps = {}) {
                 </span>
               )}
             </button>
-
-            {/* Admin Portal Link */}
-            <Link
-              href="/admin"
-              aria-label="Admin Dashboard"
-              title="Store Admin Dashboard"
-              className="w-10 h-10 rounded-full border border-white/10 bg-white/[0.03] hover:bg-white/10 hover:border-[#00E5FF]/40 flex items-center justify-center text-white/50 hover:text-[#00E5FF] transition-all cursor-pointer focus-visible:outline-2 focus-visible:outline-[#00E5FF]"
-            >
-              <Shield className="w-4 h-4" />
-            </Link>
 
             {/* Mobile Menu Toggle */}
             <div className="lg:hidden">
@@ -230,6 +220,18 @@ export default function Navbar({ cartCount }: NavbarProps = {}) {
                 type="button"
                 onClick={() => {
                   setMobileMenuOpen(false);
+                  openWishlist();
+                }}
+                className="w-full py-3.5 rounded-full border border-white/15 bg-white/5 text-white text-sm font-semibold flex items-center justify-center gap-2 hover:bg-white/10 transition-colors"
+              >
+                <Heart className="w-4 h-4 text-[#00E5FF]" />
+                <span>Wishlist ({wishlist.length})</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
                   openCart();
                 }}
                 className="w-full py-3.5 rounded-full bg-[#00E5FF] text-[#0A1014] text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg"
@@ -237,15 +239,6 @@ export default function Navbar({ cartCount }: NavbarProps = {}) {
                 <ShoppingBag className="w-4 h-4" />
                 <span>View Cart ({totalItems})</span>
               </button>
-
-              <Link
-                href="/admin"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full py-3 rounded-full border border-white/10 bg-white/5 text-white/70 hover:text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2"
-              >
-                <Shield className="w-4 h-4 text-[#00E5FF]" />
-                <span>Admin Dashboard</span>
-              </Link>
             </div>
           </motion.div>
         )}
