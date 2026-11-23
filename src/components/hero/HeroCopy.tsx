@@ -26,7 +26,7 @@ export default function HeroCopy() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
       >
-        <span className="font-body font-light text-[var(--accent)] text-[clamp(42px,14vw,56px)] sm:text-[10vw] lg:text-[clamp(52px,5.5vw,96px)] leading-none block select-none">
+        <span className="font-body font-light text-[var(--accent)] text-[clamp(34px,11vw,56px)] sm:text-[10vw] lg:text-[clamp(52px,5.5vw,96px)] leading-none block select-none">
           {brand.headlineLight}
         </span>
       </motion.div>
@@ -38,7 +38,7 @@ export default function HeroCopy() {
         transition={{ duration: 0.8, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
         className="-mt-1 lg:-mt-2"
       >
-        <span className="font-display font-bold text-white text-[clamp(52px,19vw,70px)] sm:text-[14vw] lg:text-[clamp(68px,8.5vw,144px)] leading-[0.9] tracking-[-0.02em] block select-none">
+        <span className="font-display font-bold text-white text-[clamp(44px,15vw,70px)] sm:text-[14vw] lg:text-[clamp(68px,8.5vw,144px)] leading-[0.9] tracking-[-0.02em] block select-none">
           {brand.headlineBold}
         </span>
       </motion.div>
@@ -48,7 +48,7 @@ export default function HeroCopy() {
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.38, ease: [0.16, 1, 0.3, 1] }}
-        className="font-body font-normal text-white/90 text-[15px] sm:text-[16px] lg:text-[clamp(15px,1.15vw,18px)] leading-[1.65] max-w-full sm:max-w-md lg:max-w-[400px] xl:max-w-[440px] mt-5 lg:mt-6"
+        className="font-body font-normal text-white/90 text-sm sm:text-base lg:text-[clamp(15px,1.15vw,18px)] leading-[1.55] sm:leading-[1.65] max-w-full sm:max-w-md lg:max-w-[400px] xl:max-w-[440px] mt-3 sm:mt-5 lg:mt-6"
       >
         {brand.tagline}
       </motion.p>
@@ -58,22 +58,22 @@ export default function HeroCopy() {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-        className="mt-7 lg:mt-9 w-full sm:w-auto"
+        className="mt-5 sm:mt-7 lg:mt-9 w-full sm:w-auto"
       >
         <AccentButton
           variant="outline"
-          className="w-full sm:w-[clamp(160px,16vw,200px)] h-[54px] text-[16px] sm:text-[17px]"
+          className="w-full sm:w-[clamp(160px,16vw,200px)] h-[48px] sm:h-[54px] text-sm sm:text-[17px]"
         >
           Order Now
         </AccentButton>
       </motion.div>
 
-      {/* Social Icons Row: desktop anchored to bottom-left; mobile in-flow */}
+      {/* Social Icons Row: desktop anchored to bottom-left; hidden on mobile to prioritize hero shoe */}
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-        className="mt-8 lg:mt-0 lg:absolute lg:left-0 lg:top-[66vh] xl:top-[68vh] flex items-center gap-5 sm:gap-6 z-20"
+        className="hidden lg:flex lg:absolute lg:left-0 lg:top-[66vh] xl:top-[68vh] items-center gap-5 sm:gap-6 z-20"
         aria-label="Brand Social Links"
       >
         {socialItems.map((social, i) => {

@@ -101,11 +101,11 @@ export default function Technology() {
         </motion.div>
 
         {/* Center Stage: Shoe + Ghost Text "SPEED" + Callouts */}
-        <div className="relative mt-12 lg:mt-16 w-full min-h-[440px] sm:min-h-[480px] lg:min-h-[560px] flex items-center justify-center">
+        <div className="relative mt-8 sm:mt-12 lg:mt-16 w-full min-h-[220px] sm:min-h-[340px] lg:min-h-[560px] flex items-center justify-center overflow-hidden lg:overflow-visible">
           {/* Huge .ghost-text word "SPEED" behind shoe */}
           <span
             aria-hidden="true"
-            className="ghost-text absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-body font-black text-[22vw] lg:text-[19vw] tracking-[0.2em] uppercase select-none pointer-events-none z-0 opacity-80 whitespace-nowrap"
+            className="ghost-text absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-body font-black text-[16vw] sm:text-[18vw] lg:text-[19vw] tracking-[0.15em] lg:tracking-[0.2em] uppercase select-none pointer-events-none z-0 opacity-80 whitespace-nowrap"
           >
             SPEED
           </span>

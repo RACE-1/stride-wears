@@ -37,7 +37,7 @@ export default function Cta() {
     <section
       id="cta"
       data-theme="lime"
-      className="relative z-20 py-20 sm:py-24 px-6 lg:px-12 max-w-7xl mx-auto overflow-visible select-none"
+      className="relative z-20 py-16 sm:py-24 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto overflow-hidden lg:overflow-visible select-none"
     >
       {/* Outer Big Glass Panel (max-w-[1200px], radius 40px, padding 80px 64px on desktop) */}
       <motion.div
@@ -45,7 +45,7 @@ export default function Cta() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="relative max-w-[1200px] mx-auto rounded-[32px] sm:rounded-[40px] p-6 sm:p-10 lg:p-16 lg:py-20 border border-[var(--glass-border)] bg-[var(--surface)]/45 backdrop-blur-xl shadow-2xl overflow-visible"
+        className="relative max-w-[1200px] mx-auto rounded-[28px] sm:rounded-[40px] p-5 sm:p-10 lg:p-16 lg:py-20 border border-[var(--glass-border)] bg-[var(--surface)]/45 backdrop-blur-xl shadow-2xl overflow-hidden lg:overflow-visible"
         style={{
           boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.15)',
         }}
@@ -83,7 +83,7 @@ export default function Cta() {
             </span>
 
             {/* Headline: Line 1 (IBM Plex Sans 700 white), Line 2 (Noto Sans 300 accent) */}
-            <h2 className="text-3xl sm:text-5xl lg:text-[clamp(36px,5.2vw,68px)] tracking-tight leading-[0.95] uppercase">
+            <h2 className="text-2xl sm:text-4xl lg:text-[clamp(36px,5.2vw,68px)] tracking-tight leading-[0.95] uppercase">
               <span className="font-display font-bold text-white block">
                 Your next PB
               </span>
@@ -93,8 +93,8 @@ export default function Cta() {
             </h2>
 
             {/* Muted Paragraph */}
-            <p className="text-muted text-base sm:text-lg max-w-md mt-5 sm:mt-6 leading-relaxed font-body font-normal">
-              Free shipping on orders over $75 and 30 days to change your mind.
+            <p className="text-muted text-sm sm:text-base lg:text-lg max-w-md mt-4 sm:mt-6 leading-relaxed font-body font-normal">
+              Free delivery across Ghana on orders over GH₵ 2,000 and 30 days wear trial.
             </p>
 
             {/* Button Row: Solid "Order Now" & Outline "Find your size" */}

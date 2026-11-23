@@ -29,14 +29,14 @@ export default function StatsBar({ currentSlide }: StatsBarProps) {
   return (
     <div
       data-component="StatsBar"
-      className="relative z-20 w-full max-w-[360px] sm:max-w-xl lg:w-[44vw] lg:max-w-[540px] xl:max-w-[620px] mx-auto lg:mx-0 lg:absolute lg:left-[42%] xl:left-[44%] lg:bottom-7 xl:bottom-10 pointer-events-auto mt-4 lg:mt-0"
+      className="relative z-20 w-full max-w-[calc(100vw-32px)] sm:max-w-xl lg:w-[44vw] lg:max-w-[540px] xl:max-w-[620px] mx-auto lg:mx-0 lg:absolute lg:left-[42%] xl:left-[44%] lg:bottom-7 xl:bottom-10 pointer-events-auto mt-3 sm:mt-4 lg:mt-0 overflow-hidden sm:overflow-visible"
       style={{
         transformStyle: 'preserve-3d',
       }}
     >
       {/* 3D tilted panel container */}
       <div
-        className="relative rounded-[22px] p-4 sm:p-5 lg:p-6 transition-all duration-700"
+        className="relative rounded-[20px] sm:rounded-[22px] p-3.5 sm:p-5 lg:p-6 transition-all duration-700"
         style={{
           background: 'rgba(112, 150, 100, 0.38)',
           backdropFilter: 'blur(14px)',
@@ -63,7 +63,7 @@ export default function StatsBar({ currentSlide }: StatsBarProps) {
             ease: 'easeInOut',
           }}
           aria-hidden="true"
-          className="absolute bottom-0 left-0 -translate-x-1/3 translate-y-1/3 w-[clamp(32px,3vw,48px)] h-[clamp(32px,3vw,48px)] rounded-full bg-[var(--accent)] pointer-events-none transition-colors duration-700 z-30"
+          className="hidden sm:block absolute bottom-0 left-0 -translate-x-1/3 translate-y-1/3 w-[clamp(32px,3vw,48px)] h-[clamp(32px,3vw,48px)] rounded-full bg-[var(--accent)] pointer-events-none transition-colors duration-700 z-30"
           style={{
             boxShadow: '0 0 35px rgb(var(--accent-rgb) / 0.8)',
           }}
@@ -85,14 +85,14 @@ export default function StatsBar({ currentSlide }: StatsBarProps) {
             delay: 1.5,
           }}
           aria-hidden="true"
-          className="absolute top-0 right-0 translate-x-1/3 -translate-y-1/3 w-[clamp(28px,2.8vw,42px)] h-[clamp(28px,2.8vw,42px)] rounded-full bg-[var(--accent)] pointer-events-none transition-colors duration-700 z-30"
+          className="hidden sm:block absolute top-0 right-0 translate-x-1/3 -translate-y-1/3 w-[clamp(28px,2.8vw,42px)] h-[clamp(28px,2.8vw,42px)] rounded-full bg-[var(--accent)] pointer-events-none transition-colors duration-700 z-30"
           style={{
             boxShadow: '0 0 35px rgb(var(--accent-rgb) / 0.8)',
           }}
         />
 
         {/* Four Columns Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 lg:gap-5 items-center">
           {statItems.map((item) => (
             <div key={item.key} className="flex flex-col">
               {/* Animated Value on Top */}

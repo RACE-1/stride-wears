@@ -92,7 +92,7 @@ export default function HeroShoe({ currentSlide, priority = true }: HeroShoeProp
               }
             : undefined
         }
-        className="relative z-10 w-[82vw] sm:w-[68vw] lg:w-[44vw] lg:max-w-[560px] xl:max-w-[660px] mx-auto lg:mx-0 lg:absolute lg:left-[42%] xl:left-[44%] lg:top-[10%] xl:top-[8%] flex items-center justify-center pointer-events-none select-none my-8 lg:my-0"
+        className="relative z-10 w-[80vw] max-w-[340px] sm:max-w-[480px] lg:w-[44vw] lg:max-w-[560px] xl:max-w-[660px] mx-auto lg:mx-0 lg:absolute lg:left-[42%] xl:left-[44%] lg:top-[10%] xl:top-[8%] flex items-center justify-center pointer-events-none select-none my-4 sm:my-6 lg:my-0"
       >
         {/* Idle floating animation */}
         <motion.div
@@ -137,9 +137,9 @@ export default function HeroShoe({ currentSlide, priority = true }: HeroShoeProp
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.div
               key={currentSlide.id}
-              initial={{ x: 120, y: -80, rotate: 6, opacity: 0 }}
+              initial={{ x: isDesktop ? 120 : 50, y: isDesktop ? -80 : -30, rotate: isDesktop ? 6 : 3, opacity: 0 }}
               animate={{ x: 0, y: 0, rotate: 0, opacity: 1 }}
-              exit={{ x: -120, y: 90, rotate: -8, opacity: 0 }}
+              exit={{ x: isDesktop ? -120 : -50, y: isDesktop ? 90 : 30, rotate: isDesktop ? -8 : -3, opacity: 0 }}
               transition={{
                 type: 'spring',
                 stiffness: 180,

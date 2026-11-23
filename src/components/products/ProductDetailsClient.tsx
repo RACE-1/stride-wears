@@ -269,9 +269,9 @@ export default function ProductDetailsClient({
 
             {/* Quantity and Add to Cart Buttons */}
             <div className="space-y-3 mb-8">
-              <div className="flex items-center gap-3">
+              <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-2.5 sm:gap-3">
                 {/* Quantity Stepper */}
-                <div className="flex items-center border border-white/15 bg-white/5 rounded-2xl p-1 shrink-0">
+                <div className="flex items-center justify-between xs:justify-start border border-white/15 bg-white/5 rounded-2xl p-1 shrink-0">
                   <button
                     type="button"
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -296,7 +296,7 @@ export default function ProductDetailsClient({
                   type="button"
                   onClick={handleAddToCart}
                   className={cn(
-                    'flex-1 py-3.5 px-6 rounded-2xl font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 shadow-xl cursor-pointer',
+                    'flex-1 py-3.5 px-4 sm:px-6 rounded-2xl font-black text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 shadow-xl cursor-pointer',
                     added
                       ? 'bg-emerald-400 text-black scale-98'
                       : 'bg-gradient-to-r from-[#00E5FF] to-[#8EF03A] text-black hover:opacity-95 hover:scale-101 active:scale-98 shadow-[0_6px_25px_rgba(0,229,255,0.35)]'

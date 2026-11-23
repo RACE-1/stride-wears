@@ -54,6 +54,22 @@
   --accent-ink: #0E1A0B;
 }
 
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /* Accessible focus-visible ring in brand accent color */
 :focus-visible,
 *:focus-visible {

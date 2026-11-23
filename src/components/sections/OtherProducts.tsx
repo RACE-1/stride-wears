@@ -191,14 +191,14 @@ export default function OtherProducts() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] text-xs font-bold uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 sm:mb-4">
               <Layers className="w-3.5 h-3.5" />
               <span>Complete Gear Ecosystem</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
               Apparel & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] to-[#8EF03A]">Equipment</span>
             </h2>
-            <p className="mt-3 text-white/60 text-base sm:text-lg max-w-xl">
+            <p className="mt-2 sm:mt-3 text-white/60 text-sm sm:text-lg max-w-xl">
               Engineered training apparel, technical trail bags, compression socks, and hydration gear built to withstand relentless effort.
             </p>
           </div>
@@ -375,7 +375,7 @@ export default function OtherProducts() {
 
         {/* Product Cards Grid or Empty State */}
         {filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

@@ -189,7 +189,7 @@ export default function Reviews() {
         }
       `}</style>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-14 sm:mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 mb-10 sm:mb-16">
         <SectionHeading
           eyebrow="COMMUNITY"
           title="Tested by the world's fastest."
@@ -202,7 +202,7 @@ export default function Reviews() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-12 rounded-[28px] border border-[var(--glass-border)] bg-[var(--surface)]/45 backdrop-blur-xl grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[var(--glass-border)] shadow-xl"
+          className="mt-8 sm:mt-12 rounded-[24px] sm:rounded-[28px] border border-[var(--glass-border)] bg-[var(--surface)]/45 backdrop-blur-xl grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[var(--glass-border)] shadow-xl"
         >
           <StatCounter end={5} suffix="M+" label="Satisfied customers" />
           <StatCounter end={4.9} decimals={1} suffix="/5" label="Average rating" />
@@ -211,11 +211,11 @@ export default function Reviews() {
       </div>
 
       {/* Two-Row Infinite Marquee Container with Left & Right Fade Masks */}
-      <div className="relative w-full overflow-hidden marquee-container space-y-6">
+      <div className="relative w-full overflow-hidden marquee-container space-y-4 sm:space-y-6">
         {/* Left Fade Mask */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 sm:w-40 md:w-60 z-20"
+          className="pointer-events-none absolute left-0 top-0 bottom-0 w-6 sm:w-28 md:w-60 z-20"
           style={{
             background:
               'linear-gradient(to right, var(--bg) 0%, rgba(24, 33, 37, 0) 100%)',
@@ -225,7 +225,7 @@ export default function Reviews() {
         {/* Right Fade Mask */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 sm:w-40 md:w-60 z-20"
+          className="pointer-events-none absolute right-0 top-0 bottom-0 w-6 sm:w-28 md:w-60 z-20"
           style={{
             background:
               'linear-gradient(to left, var(--bg) 0%, rgba(24, 33, 37, 0) 100%)',
@@ -256,7 +256,7 @@ export default function Reviews() {
 
 function ReviewCard({ review }: { review: Review }) {
   return (
-    <div className="w-[300px] sm:w-[360px] shrink-0 mx-3 select-none">
+    <div className="w-[270px] sm:w-[360px] shrink-0 mx-2 sm:mx-3 select-none">
       <GlassPanel className="p-5 sm:p-6 rounded-[24px] border border-[var(--glass-border)] bg-[var(--surface)]/50 hover:border-[var(--accent)] hover:shadow-[0_0_25px_rgb(var(--accent-rgb)/0.2)] transition-all duration-300 flex flex-col justify-between h-[210px]">
         <div>
           {/* 5 Accent Stars */}
